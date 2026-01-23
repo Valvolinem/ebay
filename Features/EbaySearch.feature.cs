@@ -15,8 +15,8 @@ namespace Ebay.Automation.Framework.Features
     using TechTalk.SpecFlow;
     using System;
     using System.Linq;
-
-
+    
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
@@ -25,16 +25,16 @@ namespace Ebay.Automation.Framework.Features
     [NUnit.Framework.CategoryAttribute("smoke")]
     public partial class EBayProductSearchFeature
     {
-
+        
         private TechTalk.SpecFlow.ITestRunner testRunner;
-
+        
         private static string[] featureTags = new string[] {
                 "regression",
                 "smoke"};
-
+        
 #line 1 "EbaySearch.feature"
 #line hidden
-
+        
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
@@ -43,56 +43,56 @@ namespace Ebay.Automation.Framework.Features
                     " that I can purchase items I need", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
-
+        
         [NUnit.Framework.OneTimeTearDownAttribute()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
-
+        
         [NUnit.Framework.SetUpAttribute()]
         public void TestInitialize()
         {
         }
-
+        
         [NUnit.Framework.TearDownAttribute()]
         public void TestTearDown()
         {
             testRunner.OnScenarioEnd();
         }
-
+        
         public void ScenarioInitialize(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioInitialize(scenarioInfo);
             testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<NUnit.Framework.TestContext>(NUnit.Framework.TestContext.CurrentContext);
         }
-
+        
         public void ScenarioStart()
         {
             testRunner.OnScenarioStart();
         }
-
+        
         public void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
         }
-
+        
         public virtual void FeatureBackground()
         {
 #line 7
-#line hidden
+  #line hidden
 #line 8
-            testRunner.Given("I navigate to eBay home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("I navigate to eBay home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
-            testRunner.And("I verify home page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I verify home page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
-            testRunner.And("I set shipping country to \"Bulgaria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I set shipping country to \"Bulgaria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
-
+        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Search and add Monopoly game to cart")]
         [NUnit.Framework.CategoryAttribute("product-search")]
@@ -103,7 +103,7 @@ namespace Ebay.Automation.Framework.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search and add Monopoly game to cart", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 13
-            this.ScenarioInitialize(scenarioInfo);
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -113,61 +113,61 @@ namespace Ebay.Automation.Framework.Features
             {
                 this.ScenarioStart();
 #line 7
-                this.FeatureBackground();
+  this.FeatureBackground();
 #line hidden
 #line 14
-                testRunner.When("I select \"Toys & Hobbies\" category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I select \"Toys & Hobbies\" category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 15
-                testRunner.And("I search for \"Monopoly: Elf Edition Board Game\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I search for \"Monopoly: Elf Edition Board Game\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 16
-                testRunner.And("I switch to List view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I switch to List view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 17
-                testRunner.Then("I should see product 1 with title \"Monopoly: Elf Edition Board Game\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("I should see product 1 with title \"Monopoly: Elf Edition Board Game\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 18
-                testRunner.And("I should see product 1 with price \"$39.99\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I should see product 1 with price \"$39.99\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 20
-                testRunner.When("I open product 1 details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I open product 1 details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 21
-                testRunner.Then("product details should show title \"Monopoly: Elf Edition Board Game\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("product details should show title \"Monopoly: Elf Edition Board Game\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 22
-                testRunner.And("product details should show price \"$39.99\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("product details should show price \"$39.99\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 24
-                testRunner.When("I set quantity to 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I set quantity to 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 25
-                testRunner.And("I view shipping details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I view shipping details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 26
-                testRunner.Then("shipping should be available to \"Bulgaria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("shipping should be available to \"Bulgaria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 28
-                testRunner.When("I view payment methods", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I view payment methods", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 29
-                testRunner.Then("\"Visa\" should be accepted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("\"Visa\" should be accepted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 30
-                testRunner.And("I close shipping modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I close shipping modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 32
-                testRunner.When("I add to cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I add to cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 33
-                testRunner.And("I open cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I open cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 34
-                testRunner.Then("cart should contain 2 items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("cart should contain 2 items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 35
-                testRunner.And("cart total should be \"US $79.98\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("cart total should be \"US $79.98\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
