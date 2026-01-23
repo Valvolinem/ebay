@@ -48,35 +48,26 @@ namespace Ebay.Automation.Framework.Pages
             option.Click();
         }
 
-        /// <summary>
-        /// Намира конкретен продукт (li) по индекс, стъпвайки върху локатора на UL.
-        /// </summary>
         public IWebElement GetProductByIndex(int index)
         {
-            // 1. Намираме UL родителя
             IWebElement ulContainer = Driver.FindElement(ResultsUlLocator);
 
-            // 2. Намираме всички LI деца, които отговарят на условията (s-card и data-listingid)
             IList<IWebElement> products = ulContainer.FindElements(ProductLiLocator);
             return products[index];
         }
 
         public IWebElement GetProductPrice(int index)
         {
-            // 1. Намираме UL родителя
             IWebElement ulContainer = Driver.FindElement(ResultsUlLocator);
 
-            // 2. Намираме всички LI деца, които отговарят на условията (s-card и data-listingid)
             IList<IWebElement> products = ulContainer.FindElements(ProductLiLocator);
             return products[index].FindElement(productPriceLocator);
         }
 
         public IWebElement GetProductTitle(int index)
         {
-            // 1. Намираме UL родителя
             IWebElement ulContainer = Driver.FindElement(ResultsUlLocator);
 
-            // 2. Намираме всички LI деца, които отговарят на условията (s-card и data-listingid)
             IList<IWebElement> products = ulContainer.FindElements(ProductLiLocator);
             return products[index].FindElement(productTitleLocator);
         }

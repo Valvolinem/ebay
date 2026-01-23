@@ -4,8 +4,7 @@ using Ebay.Automation.Framework.Pages;
 namespace Ebay.Automation.Framework.Utilities
 {
     /// <summary>
-    /// Simple PageObjectManager with lazy initialization.
-    /// No DI framework - just clean code.
+    /// PageObjectManager with lazy initialization.
     /// </summary>
     public class PageObjectManager
     {

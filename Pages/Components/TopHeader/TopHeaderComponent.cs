@@ -1,4 +1,3 @@
-using Ebay.Automation.Framework.Pages.Components.TopHeader;
 using OpenQA.Selenium;
 
 namespace Ebay.Automation.Framework.Pages.Components.TopHeader

@@ -1,8 +1,5 @@
 using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V142.Network;
 using OpenQA.Selenium.Support.UI;
-using System.Text.RegularExpressions;
-using NUnit.Framework;
 
 namespace Ebay.Automation.Framework.Pages
 {
