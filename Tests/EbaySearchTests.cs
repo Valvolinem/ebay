@@ -22,6 +22,7 @@ namespace Ebay.Automation.Framework.Tests
             Pages.HomePage.NavigateTo(Urls.EbayHomePageUrl);
 
             string logoTitle = Pages.HomePage.GetLogoTitle();
+            Logger.Information("Logo title: {Title}", logoTitle);
             Assert.That(logoTitle, Is.EqualTo(homePageTitle), "Page title is not correct!");
             Pages.HomePage.Header.Navigation.ChangeShippingCountry(CountryConstants.Bulgaria);
             Pages.HomePage.Header.Search.SelectCategory(EbayCategory.ToysAndHobbies);
@@ -30,10 +31,10 @@ namespace Ebay.Automation.Framework.Tests
 
             Pages.ProductResultPage.ChangeListingView(ProductListView.List);
             var title = Pages.ProductResultPage.GetProductTitle(productIndex);
-            Console.WriteLine("The title of the first product is: " + title.Text);
+            Logger.Information("Product title: {Title}", title.Text);
             Assert.AreEqual(productName, title.Text);
             var price = Pages.ProductResultPage.GetProductPrice(productIndex);
-            Console.WriteLine("The price of the first product is: " + price.Text);
+            Logger.Information("Product price: {Price}", price.Text);
             Assert.AreEqual(productPrice, price.Text);
             Pages.ProductResultPage.ClickProductByIndex(productIndex);
             Pages.DetailedProductPage.SwitchToLastWindow();
