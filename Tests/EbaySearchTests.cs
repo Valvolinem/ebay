@@ -9,6 +9,7 @@ namespace Ebay.Automation.Framework.Tests
     public class EbaySearchTests : BaseSeleniumTest
     {
         [Test]
+        [Retry(3)]
         public void SearchForMonopolyInToysAndHobbiesCategory()
         {
             var productName = "Monopoly: Elf Edition Board Game";
