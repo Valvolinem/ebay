@@ -19,7 +19,6 @@ namespace Ebay.Automation.Framework.Tests
             // Initialize WebDriver
             Driver = new ChromeDriver();
             Driver.Manage().Window.Maximize();
-            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
 
             // Initialize PageObjectManager
             Pages = new PageObjectManager(Driver);
